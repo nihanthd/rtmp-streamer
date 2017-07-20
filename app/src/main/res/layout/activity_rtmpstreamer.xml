@@ -22,7 +22,6 @@
 
     <include layout="@layout/content_rtmpstreamer"
         android:id="@+id/include" />
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/switch_camera"
         android:layout_width="wrap_content"
@@ -32,48 +31,48 @@
         app:backgroundTint="@color/holo_blue_bright"
         app:srcCompat="@drawable/ic_switch_camera" />
 
-    <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="bottom|center">
-        <ImageView
-            android:id="@+id/shutter_button_start"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/fab_margin"
-            android:backgroundTint="@color/recorder_black"
-            android:src="@drawable/btn_video_shutter_holo"
-            android:onClick=""/>
+    <ImageView
+        android:id="@+id/shutter_button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/recorder_black"
+        android:src="@drawable/btn_video_shutter_holo"
+        android:layout_gravity="bottom|center"
+        android:onClick=""/>
 
-        <ImageView
-            android:id="@+id/shutter_button_start_preseed"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/fab_margin"
-            android:backgroundTint="@color/recorder_black"
-            android:src="@drawable/btn_video_shutter_pressed_holo"
-            android:visibility="invisible"
-            android:onClick=""/>
+    <ImageView
+        android:id="@+id/shutter_button_start_preseed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/recorder_black"
+        android:src="@drawable/btn_video_shutter_pressed_holo"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|center"
+        android:onClick=""/>
 
-        <ImageView
-            android:id="@+id/shutter_button_stop_pressed"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/fab_margin"
-            android:backgroundTint="@color/recorder_black"
-            android:src="@drawable/btn_video_shutter_recording_pressed_holo"
-            android:visibility="invisible"
-            android:onClick=""/>
+    <ImageView
+        android:id="@+id/shutter_button_stop_pressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/recorder_black"
+        android:src="@drawable/btn_video_shutter_recording_pressed_holo"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|center"
+        android:onClick=""/>
 
-        <ImageView
-            android:id="@+id/shutter_button_stop"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/fab_margin"
-            android:backgroundTint="@color/recorder_black"
-            android:src="@drawable/btn_video_shutter_recording_holo"
-            android:visibility="invisible"
-            android:onClick=""/>
+    <ImageView
+        android:id="@+id/shutter_button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/recorder_black"
+        android:onClick=""
+        android:src="@drawable/btn_video_shutter_recording_holo"
+        android:layout_gravity="bottom|center"
+        android:visibility="invisible" />
 
-    </FrameLayout>
+
 </android.support.design.widget.CoordinatorLayout>
